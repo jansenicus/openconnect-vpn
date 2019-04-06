@@ -22,6 +22,6 @@ if [ -f $BASEDIR/$FILE ] ; then
   pass=$(echo $json | jq '.pass' | tr -d \")
   echo $pass | sudo openconnect --protocol=gp $url --user=$user --passwd-on-stdin --csd-wrapper="hipreport.sh"
 else
-  ./credential-maker.sh
+  ./credential-updater.sh
   $0
 fi
