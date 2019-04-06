@@ -1,19 +1,19 @@
-# OPENCONNECT-VPN
+# OpenConnect Installer and Launcher
 
-## openconnect installer
+## OpenConnect Installer
 ```
 chmod +x openconnect-installer
 sudo ./openconnect-installer.sh
 ```
 
-## openconnect launcher
+## OpenConnect Launcher
 ```
 chmod +x openconnect-launcher.sh
 sudo ./openconnect-launcher
 ```
 
-## credential updater
-updating your encrypted user and password for convenience for use in `openconnect-launcher`
+## Credential Updater
+updating your encrypted user and password for convenience for use in `CpenconnectUlauncher`
 ```
 chmod +x credential-updater.sh
 sudo ./credential-updater.sh
