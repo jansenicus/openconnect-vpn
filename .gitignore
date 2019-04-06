@@ -1,0 +1,10 @@
+vpnbri-private.sh
+vpnbri-private
+vpnbri-*
+temp.sh
+catatan.txt
+compile.sh
+*.c
+.credential
+decode-credential.sh
+*decoder.sh
