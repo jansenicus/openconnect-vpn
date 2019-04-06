@@ -13,7 +13,7 @@ sudo ./openconnect-launcher
 ```
 
 ## Credential Updater
-updating your encrypted user and password for convenience for use in `CpenconnectUlauncher`
+updating your encrypted user and password for convenience for use in `openconnect-launcher`
 ```
 chmod +x credential-updater.sh
 sudo ./credential-updater.sh
