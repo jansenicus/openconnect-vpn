@@ -1,11 +1,11 @@
 #!/bin/bash
 BASEDIR=$(pwd -P)
 chmod +x openconnect-launcher.sh
-chmod +x credential-maker.sh
-sudo apt-get install \
+chmod +x credential-updater.sh
+sudo apt-get install git jq \
     build-essential gettext autoconf automake libproxy-dev \
     libxml2-dev libtool vpnc-scripts pkg-config \
-    libgnutls28-dev git jq
+    libgnutls28-dev
 cd /tmp
 git clone https://github.com/dlenski/openconnect.git
 cd openconnect
