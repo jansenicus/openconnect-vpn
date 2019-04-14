@@ -1,10 +1,7 @@
-vpnbri-private.sh
-vpnbri-private
-vpnbri-*
 temp.sh
 catatan.txt
-compile.sh
 *.c
-.credential
+.ocvpn
 decode-credential.sh
 *decoder.sh
+compile.sh

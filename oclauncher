@@ -13,15 +13,15 @@ OPENCONNECT VPN CONNECTION
 clear
 echo "$banner"
 BASEDIR=$(dirname "$0")
-FILE='.credential'
-if [ -f $BASEDIR/$FILE ] ; then
+FILE=$BASEDIR/.ocvpn
+if [ -f $FILE ] ; then
 
-  json=$(echo $(cat .credential | base64 --decode))
+  json=$(echo $(cat $FILE | base64 --decode))
   url=$(echo $json | jq '.url' | tr -d \")
   user=$(echo $json | jq '.user' | tr -d \")
   pass=$(echo $json | jq '.pass' | tr -d \")
-  echo $pass | sudo openconnect --protocol=gp $url --user=$user --passwd-on-stdin --csd-wrapper="hipreport.sh"
+  echo $pass | sudo openconnect --protocol=gp $url --user=$user --passwd-on-stdin --csd-wrapper="$BASEDIR/hipreport.sh"
 else
-  ./credential-updater.sh
+  $BASEDIR/vpncredential
   $0
 fi

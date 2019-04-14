@@ -1,7 +1,7 @@
 #!/bin/bash
 BASEDIR=$(pwd -P)
-chmod +x openconnect-launcher.sh
-chmod +x credential-updater.sh
+chmod +x oclauncher
+chmod +x vpncredential
 sudo apt-get install git jq \
     build-essential gettext autoconf automake libproxy-dev \
     libxml2-dev libtool vpnc-scripts pkg-config \
@@ -13,7 +13,11 @@ cd openconnect
 ./configure
 make
 sudo make install && sudo ldconfig
-clear
 echo "openconnect successfully installed!"
 cd $BASEDIR
-sudo $BASEDIR/openconnect-launcher.sh
+INSTALDIR=~/.local/bin
+cp "vpncredential" "$INSTALDIR"
+cp "hipreport.sh" "$INSTALDIR"
+cp "oclauncher" "$INSTALDIR"
+cd $INSTALDIR
+sudo $INSTALDIR/oclauncher

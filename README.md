@@ -2,21 +2,21 @@
 
 ## OpenConnect Installer
 ```
-chmod +x openconnect-installer
-sudo ./openconnect-installer.sh
+chmod +x ocinstaller
+sudo ./ocinstaller
 ```
 
 ## OpenConnect Launcher
 ```
-chmod +x openconnect-launcher.sh
-sudo ./openconnect-launcher
+chmod +x oclauncher
+sudo ./oclauncher
 ```
 
-## Credential Updater
-updating your encrypted user and password for convenience for use in `openconnect-launcher`
+## VPN Credential
+updating your encrypted user and password for convenience for use in `oclauncher`
 ```
-chmod +x credential-updater.sh
-sudo ./credential-updater.sh
+chmod +x vpncredential
+sudo ./vpncredential
 ```
 
 # OpenConnect
