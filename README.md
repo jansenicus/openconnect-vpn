@@ -1,25 +1,25 @@
-# OpenConnect Installer and Launcher
+# OpenConnect VPN Installer and Launcher
 
-## OpenConnect Installer
+## OpenConnect VPN Installer
 ```
-chmod +x ocinstaller
-sudo ./ocinstaller
-```
-
-## OpenConnect Launcher
-```
-chmod +x oclauncher
-sudo ./oclauncher
+chmod +x ovinstaller
+sudo ./ovinstaller
 ```
 
-## VPN Credential
+## OpenConnect VPN Launcher
+```
+chmod +x ovlauncher
+sudo ./ovlauncher
+```
+
+## OpenConnect VPN Credential
 updating your encrypted user and password for convenience for use in `oclauncher`
 ```
-chmod +x vpncredential
-sudo ./vpncredential
+chmod +x ovcredential
+sudo ./ovcredential
 ```
 
-# OpenConnect
+# OpenConnect VPN
 
 OpenConnect is an SSL VPN client initially created to support Cisco's AnyConnect SSL VPN. It has since been ported to support the Juniper SSL VPN (which is now known as Pulse Connect Secure), and to the Palo Alto Networks GlobalProtect SSL VPN.
 
