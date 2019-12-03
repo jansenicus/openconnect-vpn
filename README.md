@@ -28,4 +28,6 @@ OpenConnect is released under the GNU Lesser Public License, version 2.1.
 Like vpnc, OpenConnect is not officially supported by, or associated in any way with, Cisco Systems, Juniper Networks, Pulse Secure, or Palo Alto Networks. It just happens to interoperate with their equipment.
 
 # Use with crontab 
+```
 @reboot /etc/init.d/ovstealth
+```
