@@ -15,9 +15,10 @@ make
 sudo make install && sudo ldconfig
 echo "openconnect successfully installed!"
 cd $BASEDIR
-INSTALDIR=~/.local/bin
+INSTALDIR=/usr/local/bin
 cp "ovcredential" "$INSTALDIR"
 cp "ovreport" "$INSTALDIR"
 cp "ovlauncher" "$INSTALDIR"
+cp "ovstealth.sh" "$INSTALDIR"
 cd $INSTALDIR
 sudo $INSTALDIR/ovlauncher
