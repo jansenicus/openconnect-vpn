@@ -13,7 +13,7 @@ sudo ./ovlauncher
 ```
 
 ## OpenConnect VPN Credential
-updating your encrypted user and password for convenience for use in `oclauncher`
+updating your encrypted user and password for convenience for use in `ovlauncher`
 ```
 chmod +x ovcredential
 sudo ./ovcredential
