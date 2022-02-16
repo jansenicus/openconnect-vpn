@@ -57,7 +57,7 @@ cat <<EOF
 	<categories>
 		<entry name="host-info">
 			<client-version>4.0.2-19</client-version>
-			<os>Microsoft Windows 10 Pro , 64-bit</os>
+			<os>Microsoft Windows 11 Pro , 64-bit</os>
 			<os-vendor>Microsoft</os-vendor>
 			<domain>$DOMAIN.internal</domain>
 			<host-name>$COMPUTER</host-name>
