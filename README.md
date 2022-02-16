@@ -1,9 +1,14 @@
 # OpenConnect VPN Installer and Launcher
 
 ## OpenConnect VPN Installer
-```
+```bash
+# Linux
 chmod +x ovinstaller
 sudo ./ovinstaller
+```
+or in Mac:
+```
+brew install openconnect jq
 ```
 
 ## OpenConnect VPN Launcher
@@ -28,8 +33,8 @@ OpenConnect is released under the GNU Lesser Public License, version 2.1.
 Like vpnc, OpenConnect is not officially supported by, or associated in any way with, Cisco Systems, Juniper Networks, Pulse Secure, or Palo Alto Networks. It just happens to interoperate with their equipment.
 
 # Use with crontab 
-```
+```bash
 @reboot /etc/init.d/ovstealth
 ```
-# GlobalProtect for Linux
+# GlobalProtect for Linux/ Mac/ Windows
 http://files.mobilemini.com/GlobalProtect/
