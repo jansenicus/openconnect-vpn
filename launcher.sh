@@ -20,7 +20,9 @@ if [ -f $FILE ] ; then
   url=$(echo $json | jq '.url' | tr -d \")
   user=$(echo $json | jq '.user' | tr -d \")
   pass=$(echo $json | jq '.pass' | tr -d \")
-  sudo openconnect --protocol=gp $url --user=$user --csd-wrapper="ovreport"
+  echo Please enter OTP token
+  read token
+  echo $pass$token | sudo openconnect --protocol=gp $url --user=$user --passwd-on-stdin --csd-wrapper="$BASEDIR/ovreport"
 else
   $BASEDIR/ovcredential
   $0
