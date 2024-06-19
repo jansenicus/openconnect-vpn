@@ -4,6 +4,8 @@ if [[ $UID != 0 ]]; then
     eval "sudo $0 $*"
     exit 1
 fi
+GREEN='\033[0;32m'  # ANSI escape code for green text
+NC='\033[0m'        # ANSI escape code to reset text color
 banner="
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 OPENCONNECT VPN CONNECTION
@@ -20,10 +22,19 @@ if [ -f $FILE ] ; then
   url=$(echo $json | jq '.url' | tr -d \")
   user=$(echo $json | jq '.user' | tr -d \")
   pass=$(echo $json | jq '.pass' | tr -d \")
-  echo Please enter OTP token
-  read token
-  echo $pass$token | sudo openconnect --protocol=gp $url --user=$user --passwd-on-stdin --csd-wrapper="$BASEDIR/ovreport"
+  echo OTP token generated based on secret
+  token=$(oathtool --totp=SHA512 -b 32TOXV4SOFOOJWNPXYW2HCS3WNQOMK4353XYJIYABOMDJQ2AGHNL6W3BO4FE2D2M33KK7QLIMYXCGWLTGZ7X3R3RG7MVUQLWSF2KAVQ)
+  echo $pass$token | sudo openconnect --protocol=gp $url --user=$user --passwd-on-stdin --csd-wrapper="$BASEDIR/ovreport" --no-dtls
 else
   $BASEDIR/ovcredential
   $0
 fi
+
+echo -n ""
+for i in {15..1}; do
+    printf "\r reconnecting in ${GREEN}%d${NC} seconds" "$i"
+    sleep 1  # Optional: Add a sleep to slow down the loop for better visibility
+done
+echo  # Add a newline to move to the next line after the loop completes
+
+./ovlauncher
