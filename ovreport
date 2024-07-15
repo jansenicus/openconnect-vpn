@@ -79,15 +79,15 @@ cat <<EOF
 			<list>
 				<entry>
 					<ProductInfo>
-						<Prod name="McAfee VirusScan Enterprise" version="8.8.0.1804" defver="8682.0" prodType="1" engver="5900.7806" osType="1" vendor="McAfee, Inc." dateday="12" dateyear="2050" datemon="12">
+						<Prod name="McAfee VirusScan Enterprise" version="8.8.0.1804" defver="8682.0" prodType="1" engver="5900.7806" osType="1" vendor="McAfee, Inc." dateday="12" dateyear="2024" datemon="12">
 						</Prod>
 						<real-time-protection>yes</real-time-protection>
-						<last-full-scan-time>12/12/2050 15:23:41</last-full-scan-time>
+						<last-full-scan-time>12/12/2024 15:23:41</last-full-scan-time>
 					</ProductInfo>
 				</entry>
 				<entry>
 					<ProductInfo>
-						<Prod name="Windows Defender" version="4.11.15063.332" defver="1.245.683.0" prodType="1" engver="1.1.13804.0" osType="1" vendor="Microsoft Corp." dateday="8" dateyear="2050" datemon="12">
+						<Prod name="Windows Defender" version="4.11.15063.332" defver="1.245.683.0" prodType="1" engver="1.1.13804.0" osType="1" vendor="Microsoft Corp." dateday="8" dateyear="2024" datemon="12">
 						</Prod>
 						<real-time-protection>no</real-time-protection>
 						<last-full-scan-time>n/a</last-full-scan-time>
@@ -99,15 +99,15 @@ cat <<EOF
 			<list>
 				<entry>
 					<ProductInfo>
-						<Prod name="McAfee VirusScan Enterprise" version="8.8.0.1804" defver="8682.0" prodType="2" engver="5900.7806" osType="1" vendor="McAfee, Inc." dateday="12" dateyear="2050" datemon="12">
+						<Prod name="McAfee VirusScan Enterprise" version="8.8.0.1804" defver="8682.0" prodType="2" engver="5900.7806" osType="1" vendor="McAfee, Inc." dateday="12" dateyear="2024" datemon="12">
 						</Prod>
 						<real-time-protection>yes</real-time-protection>
-						<last-full-scan-time>12/12/2050 15:23:41</last-full-scan-time>
+						<last-full-scan-time>12/12/2024 15:23:41</last-full-scan-time>
 					</ProductInfo>
 				</entry>
 				<entry>
 					<ProductInfo>
-						<Prod name="Windows Defender" version="4.11.15063.332" defver="1.245.683.0" prodType="2" engver="1.1.13804.0" osType="1" vendor="Microsoft Corp." dateday="8" dateyear="2050" datemon="12">
+						<Prod name="Windows Defender" version="4.11.15063.332" defver="1.245.683.0" prodType="2" engver="1.1.13804.0" osType="1" vendor="Microsoft Corp." dateday="8" dateyear="2024" datemon="12">
 						</Prod>
 						<real-time-protection>no</real-time-protection>
 						<last-full-scan-time>n/a</last-full-scan-time>
