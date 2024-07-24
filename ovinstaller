@@ -2,7 +2,7 @@
 BASEDIR=$(pwd -P)
 chmod +x ovlauncher
 chmod +x ovcredential
-sudo apt install openconnect
+sudo apt install openconnect jq oathtool
 echo "openconnect successfully installed!"
 cd $BASEDIR
 INSTALDIR=/usr/local/bin
