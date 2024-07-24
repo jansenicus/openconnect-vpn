@@ -8,7 +8,7 @@ sudo ./ovinstaller
 ```
 or in Mac:
 ```
-brew install openconnect jq
+brew install openconnect jq oath-toolkit
 ```
 
 ## OpenConnect VPN Launcher
