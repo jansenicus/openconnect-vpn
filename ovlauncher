@@ -22,8 +22,8 @@ if [ -f $FILE ] ; then
   url=$(echo $json | jq '.url' | tr -d \")
   user=$(echo $json | jq '.user' | tr -d \")
   pass=$(echo $json | jq '.pass' | tr -d \")
-  echo OTP token generated based on secret
-  token=$(oathtool --totp=SHA512 -b 32TOXV4SOFOOJWNPXYW2HCS3WNQOMK4353XYJIYABOMDJQ2AGHNL6W3BO4FE2D2M33KK7QLIMYXCGWLTGZ7X3R3RG7MVUQLWSF2KAVQ)
+  echo Please enter OTP token
+  read token
   echo $pass$token | sudo openconnect --protocol=gp $url --user=$user --passwd-on-stdin --csd-wrapper="$BASEDIR/ovreport" --no-dtls
 else
   $BASEDIR/ovcredential
